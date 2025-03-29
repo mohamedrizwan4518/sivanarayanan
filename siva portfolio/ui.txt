@@ -1,0 +1,40 @@
+Project Title: Mobile Banking App Redesign
+Project Overview:
+I led the redesign of a mobile banking app aimed at improving user engagement, enhancing usability, and increasing customer satisfaction. The goal was to streamline the user experience and make banking more accessible for all users, especially younger demographics.
+
+Technologies Used:
+Design Tools: Figma, Adobe XD
+Prototyping Tools: InVision, Marvel
+User Testing Tools: UsabilityHub, Lookback
+Collaboration Tools: Miro, Slack
+Design Goals:
+Simplify the onboarding process for new users.
+Enhance navigation to ensure users can quickly access key features (e.g., balance checking, fund transfers).
+Improve accessibility to cater to a diverse user base, including those with disabilities.
+Development Process:
+1. Research & Discovery:
+Conducted user interviews and surveys to gather insights on pain points and preferences regarding the current app.
+Analyzed competitor apps to identify best practices and areas for differentiation.
+Created user personas representing key segments, including tech-savvy millennials, busy professionals, and older users.
+2. User Journey Mapping:
+Developed user journey maps to visualize the steps users take within the app, highlighting pain points and opportunities for improvement.
+Focused on critical tasks, such as checking balances, transferring money, and finding help.
+3. Wireframing & Prototyping:
+Created low-fidelity wireframes to iterate on layout and flow quickly, ensuring all key features were represented.
+Transformed wireframes into high-fidelity prototypes in Figma to simulate user interactions and visual design.
+Integrated micro-interactions to enhance user engagement, such as subtle animations during transitions and feedback on button presses.
+4. User Testing:
+Conducted usability tests with target users, observing their interactions with the prototype to identify areas of confusion or frustration.
+Gathered qualitative feedback through follow-up interviews to understand user sentiments and preferences.
+Iterated on the design based on user feedback, focusing on simplifying complex interactions and enhancing clarity.
+5. Visual Design:
+Developed a modern, clean aesthetic using a soft color palette to evoke trust and calmness.
+Chose accessible typography to ensure readability, particularly for older users.
+Created a consistent icon set and UI components that reflect the bank's branding and values.
+6. Accessibility Considerations:
+Implemented design features that adhere to WCAG 2.1 standards, ensuring color contrast ratios are compliant.
+Included options for larger text sizes and alternative text for images, making the app more usable for individuals with visual impairments.
+Final Outcome:
+The redesigned mobile banking app launched successfully, leading to a 30% increase in user engagement and a 20% decrease in customer support inquiries regarding navigation issues. The simplified onboarding process contributed to higher conversion rates, with more users completing registration.
+
+Client Feedback: "The redesign has made our app not only more user-friendly but also visually appealing. Our customers appreciate the changes, and we've seen a noticeable uptick in positive reviews."

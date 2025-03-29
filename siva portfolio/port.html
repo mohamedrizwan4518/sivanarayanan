@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>siva.com</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Background Music -->
+    <audio id="background-music" autoplay loop>
+        <source src="C:\Users\acer\Music\Chinna Chinna Kangal Sirikiratho.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        // For browsers that block autoplay, play the audio after the user clicks
+        document.addEventListener('click', function () {
+            var audio = document.getElementById('background-music');
+            if (audio.paused) {
+                audio.play();
+            }
+        });
+    </script>
+
+
+
+    <header class="header">
+        <a href="#" class="logo fade-in">
+            <div class="logo-oval">
+                <img src="img/Siva-designstyle-sunset-l.png" alt="" class="logo-image">
+            </div>
+        </a>
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About me</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section class="home" id="home">
+        <div class="home-img fade-in animated-image">
+            <img src="img/siva 5.jpg" alt="">
+        </div>
+
+        <div class="home-content">
+            <h1 class="animated-heading fade-in">Hi! It's <span>Siva</span></h1>
+            <div class="text fade-in">
+                <p>And I'm</p>
+                <p>
+                    <span class="word wisteria animated-word">Web designer</span>
+                    <span class="word belize animated-word">Python Programmer</span>
+                    <span class="word pomegranate animated-word">Fullstack developer</span>
+                    <span class="word green animated-word">Graphic designer</span>
+                </p>
+            </div>
+            <p style="margin-top: 50px;" class="fade-in">Web designer and developer working in this field for 1 years.So
+                far specialised
+                in front end web development</p>
+            <div class="social-icon fadein animated-link">
+                <a
+                    href="https://www.linkedin.com/in/m-siva-36bb70290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/Siva018-bit"><i class="fa-brands fa-github"></i></a>
+                <a href="https://x.com/Shiva_vk_17?t=6DU3pnQqshlbE0pFhlf8vg&s=08"><i
+                        class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/_.shiva_.vk_/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+
+            <div class="home-button animated-button">
+                <button class="button fade-in" onclick="scrollToContact()">
+                    <a href="contact" target=""></a>
+                    <p>Hire Me</p>
+                </button>
+                <a href="siva cv.pdf.pdf" target="_blank">
+                    <button class="button button2 fade-in">
+                        <p>View CV</p>
+                    </button>
+                </a>
+            </div>
+            <script>
+                function scrollToContact() {
+                    // Scroll to the contact section smoothly
+                    document.getElementById("contact").scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            </script>
+
+
+        </div>
+    </section>
+    <script>
+        function scrollToContact() {
+            // Scroll to the contact section smoothly
+            document.getElementById("contact").scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    </script>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const animatedElements = [
+                document.querySelector('.animated-image'),
+                document.querySelector('.animated-heading'),
+                ...document.querySelectorAll('.animated-word'),
+                document.querySelector('.animated-link'),
+                document.querySelector('.animated-button')
+            ];
+
+            const observerOptions = {
+                root: null,
+                threshold: 0.1 // Trigger when 10% of the element is in view
+            };
+
+            const observerCallback = (entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate');
+                        observer.unobserve(entry.target); // Stop observing after animation
+                    }
+                });
+            };
+
+            const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+            animatedElements.forEach(element => {
+                observer.observe(element);
+            });
+        });
+    </script>
+
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="img/siva 5.jpg" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3 class="typing-text"><span></span></h3>
+            <p>A story of good looking and ambitious guy.Myself I'm Sivanarayanan who is currently pursuing
+                B.tech(AI&DS) in Achariya College of Engineering Technology.
+                I'm an obedient, talented, and a topper in academics suggests me as a dedicated and excels in studies.
+                The communication skills and politeness further highlight well-rounded character. These qualities are
+                valuable not just for academic success but also for building positive relationships and achieving
+                professional goals in the future. It’s always great to see someone who combines academic excellence with
+                kindness and effective communication.
+            </p>
+        </div>
+    </section>
+
+
+    <section class="skills section" id="skills">
+        <h2 class="heading" Skills>Skills</h2>
+        <div class="container">
+            <div class="row" id="skillsContainer">
+                <div class="bar">
+                    <div class="info">
+                        <img src="img/HTML-5-Badge-Logo.png" alt="" style="width: 100px;">
+                        <span>HTML</span>
+                    </div>
+                </div>
+
+                <div class="bar">
+                    <div class="info">
+                        <img src="img/css3.png" alt="" style="width: 70px;margin-left:15px">
+                        <span>CSS</span>
+                    </div>
+                </div>
+
+                <div class="bar">
+                    <div class="info">
+                        <img src="img/javascript-logo-javascript-icon-transparent-free-png.webp" alt=""
+                            style="width:70px;margin-left:15px">
+                        <span>Javascript</span>
+                    </div>
+                </div>
+
+                <div class="bar">
+                    <div class="info">
+                        <img src="img/React.webp" alt="" style="width:70px;margin-left:15px">
+                        <span>Reactjs</span>
+                    </div>
+                </div>
+
+                <div class="bar">
+                    <div class="info">
+                        <img src="img/Python-logo-notext.svg.png" alt="" style="width:70px;margin-left:15px">
+                        <span>Python</span>
+                    </div>
+                </div>
+
+                <div class="bar">
+                    <div class="info">
+                        <img src="img/Adobe-Photoshop-Logo.png" alt="" style="width:120px;margin-left:-12px">
+                        <span>Photoshop</span>
+                    </div>
+                </div>
+
+                <div class="bar">
+                    <div class="info">
+                        <img src="img/sql-database-generic-icon-1521x2048-d0vdpxpg.png" alt=""
+                            style="width:70px;margin-left:15px">
+                        <span>SQL</span>
+                    </div>
+                </div>
+
+                <div class="bar">
+                    <div class="info">
+                        <img src="img/85df5d7e-0d9c-4089-a895-cb5c47f3eacb.png" alt=""
+                            style="width:70px;margin-left:15px">
+                        <span>DJango</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="education" id="education">
+        <h2 class="heading">Education</h2>
+        <div class="timeline">
+            <div class="container right">
+                <div class="content">
+                    <div class="tag">
+                        <h2>Elementary education</h2>
+                    </div>
+
+                    <div class="desc">
+                        <p>Completed my Elementary education in Sree mother vidhyashram located near Tindivanam with
+                            good score in overall academics.
+                            And I have completed my SSLC with 75% of overall score.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container left">
+                <div class="content">
+                    <div class="tag">
+                        <h2>Higher Secondary Education</h2>
+                    </div>
+
+                    <div class="desc">
+                        <p>Completed my higher Secondary education in Sri Dharamchand Jain school located near
+                            Vandavasi.
+                            And completed the HSC with 85% of overall score.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container right">
+                <div class="content">
+                    <div class="tag">
+                        <h2>Under graduate</h2>
+                    </div>
+
+                    <div class="desc">
+                        <p>Currently pursuing B.Tech(AI&DS) in Achariya college of Engineering Technology
+                            which is located in villianur with a GPA of 9.4</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container left">
+                <div class="content">
+                    <div class="tag">
+                        <h2>Web desingn</h2>
+                    </div>
+
+                    <div class="desc">
+                        <p>Completed my Full stack web development in FITA Academy which is located in
+                            pondicherry and I have made my own portfolio website with the help of guidance from my
+                            course faculties.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container right">
+                <div class="content">
+                    <div class="tag">
+                        <h2>Internship</h2>
+                    </div>
+
+                    <div class="desc">
+                        <p>Completed my one month of Internship in HCL company with a validated certificate.
+                            Also done a small project within that short span of intern time.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container left">
+                <div class="content">
+                    <div class="tag">
+                        <h2>Data Science</h2>
+                    </div>
+
+                    <div class="desc">
+                        <p>Completed my four month of data science course in the same FITA academy at pondicherry and
+                            I have completed my first project as a data scientist.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Function to trigger animations on scroll
+        document.addEventListener("scroll", function () {
+            const containers = document.querySelectorAll(".timeline .container");
+
+            containers.forEach((container, index) => {
+                const position = container.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.3;
+
+                // Check if the container is in view
+                if (position < screenPosition) {
+                    container.classList.add("show");
+                }
+            });
+        });
+
+
+    </script>
+
+
+    <!--<section class="services" id="services">
+        <h2 class="heading">Services</h2>
+
+        <div class="service-container">
+            <div class="single-service">
+                <div class="content">
+                    <span class="icon">
+                        <i class="fab fa-battle-net"></i>
+                    </span>
+                    <h3 class="title">Graphics Designer</h3>
+                    <p class="description">Graphic design services involve creating visual content to communicate
+                        messages effectively. These services typically include logo design, branding, marketing
+                        materials such as brochures and flyers, packaging design, and digital graphics for social media
+                        and websites. Graphic designers focus on aesthetics, typography, and color theory to craft
+                        compelling visuals that resonate with audiences.
+                        Additionally, they may offer illustration, infographics, and user interface (UI) design</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <span class="circle-before"></span>
+            </div>
+
+            <div class="single-service">
+                <div class="content">
+                    <span class="icon">
+                        <i class="fab fa-asymmetrik"></i>
+                    </span>
+                    <h3 class="title">Web Designer</h3>
+                    <p class="description">Web design services encompass a range of offerings aimed at creating visually
+                        appealing and user-friendly websites. These services typically include website layout design,
+                        user experience (UX) optimization, responsive design for mobile devices, and graphic design.
+                        Additionally, web designers often provide services like branding, search engine optimization
+                        (SEO),
+                        and ongoing maintenance to ensure the site remains functional and up-to-date.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <span class="circle-before"></span>
+            </div>
+
+            <div class="single-service">
+                <div class="content">
+                    <span class="icon">
+                        <i class="fab fa-artstation"></i>
+                    </span>
+                    <h3 class="title">Software Development</h3>
+                    <p class="description">Software development services encompass the design, creation, and maintenance
+                        of software applications tailored to meet specific business needs. These services include custom
+                        software development, mobile app development, web application development, and integration of
+                        existing systems. Developers also provide
+                        services like software testing, quality assurance, and ongoing support to ensure optimal
+                        performance and security.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <span class="circle-before"></span>
+            </div>
+        </div>
+
+        <div class="service-container">
+            <div class="single-service">
+                <div class="content">
+                    <span class="icon">
+                        <i class="fab fa-500px"></i>
+                    </span>
+                    <h3 class="title">Brand Strategy</h3>
+                    <p class="description">Brand strategy services focus on developing a comprehensive plan to define
+                        and enhance a brand's identity and market presence. These services include market research to
+                        understand target audiences, competitor analysis, and brand positioning to differentiate the
+                        brand in the marketplace. Additionally,
+                        experts work on crafting brand messaging, visual identity, and tone of voice to ensure
+                        consistency across all platforms.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <span class="circle-before"></span>
+            </div>
+
+            <div class="single-service">
+                <div class="content">
+                    <span class="icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </span>
+                    <h3 class="title">Business Consulting</h3>
+                    <p class="description">Business consulting services offer expert guidance to organizations aiming to
+                        improve performance and achieve their goals. These services include strategic planning,
+                        operational efficiency analysis, financial advisory, and market research. Consultants help
+                        businesses identify challenges, develop actionable solutions, and implement best practices
+                        tailored to their unique needs.
+                        Additionally, services may cover change management, risk assessment, and leadership development
+                    </p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <span class="circle-before"></span>
+            </div>
+
+            <div class="single-service">
+                <div class="content">
+                    <span class="icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </span>
+                    <h3 class="title">Web Developer</h3>
+                    <p class="description">Web development services involve the creation and maintenance of websites and
+                        web applications to ensure optimal performance and user experience. These services include
+                        front-end development, which focuses on the visual aspects of a site, and back-end development,
+                        which handles server-side functionality and database management. Developers also provide
+                        responsive design
+                        to ensure compatibility across devices, e-commerce integration, and content management system
+                        (CMS) setup for easy updates.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <span class="circle-before"></span>
+            </div>
+        </div>
+    </section>!-->
+
+    <section class="services" id="services">
+        <h2 class="heading">Services</h2>
+
+        <div class="service-container">
+            <div class="single-service">
+                <div class="content">
+                    <span class="icon">
+                        <div class="icon-inner">
+                            <i class="fab fa-battle-net"></i> <!-- Front icon -->
+                        </div>
+                    </span>
+                    <h3 class="title">Graphics Designer</h3>
+                    <p class="description">Graphic design services involve creating visual content to communicate
+                        messages effectively. These services typically include logo design, branding, marketing
+                        materials such as brochures and flyers, packaging design, and digital graphics for social media
+                        and websites. Graphic designers focus on aesthetics, typography, and color theory to craft
+                        compelling visuals that resonate with audiences.
+                        Additionally, they may offer illustration, infographics, and user interface (UI) design</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <span class="circle-before"></span>
+            </div>
+
+            <div class="single-service">
+                <div class="content">
+                    <span class="icon">
+                        <div class="icon-inner">
+                            <i class="fab fa-asymmetrik"></i> <!-- Front icon -->
+                        </div>
+                    </span>
+                    <h3 class="title">Web Designer</h3>
+                    <p class="description">Web design services encompass a range of offerings aimed at creating visually
+                        appealing and user-friendly websites. These services typically include website layout design,
+                        user experience (UX) optimization, responsive design for mobile devices, and graphic design.
+                        Additionally, web designers often provide services like branding, search engine optimization
+                        (SEO),
+                        and ongoing maintenance to ensure the site remains functional and up-to-date.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <span class="circle-before"></span>
+            </div>
+
+            <div class="single-service">
+                <div class="content">
+                    <span class="icon">
+                        <div class="icon-inner">
+                            <i class="fab fa-artstation"></i> <!-- Front icon -->
+                        </div>
+                    </span>
+                    <h3 class="title">Software Development</h3>
+                    <p class="description">Software development services encompass the design, creation, and maintenance
+                        of software applications tailored to meet specific business needs. These services include custom
+                        software development, mobile app development, web application development, and integration of
+                        existing systems. Developers also provide
+                        services like software testing, quality assurance, and ongoing support to ensure optimal
+                        performance and security.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <span class="circle-before"></span>
+            </div>
+        </div>
+
+        <div class="service-container">
+            <div class="single-service">
+                <div class="content">
+                    <span class="icon">
+                        <div class="icon-inner">
+                            <i class="fab fa-500px"></i> <!-- Front icon -->
+                        </div>
+                    </span>
+                    <h3 class="title">Brand Strategy</h3>
+                    <p class="description">Brand strategy services focus on developing a comprehensive plan to define
+                        and enhance a brand's identity and market presence. These services include market research to
+                        understand target audiences, competitor analysis, and brand positioning to differentiate the
+                        brand in the marketplace. Additionally,
+                        experts work on crafting brand messaging, visual identity, and tone of voice to ensure
+                        consistency across all platforms.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <span class="circle-before"></span>
+            </div>
+
+            <div class="single-service">
+                <div class="content">
+                    <span class="icon">
+                        <div class="icon-inner">
+                            <i class="fas fa-chart-pie"></i> <!-- Front icon -->
+                        </div>
+                    </span>
+                    <h3 class="title">Business Consulting</h3>
+                    <p class="description">Business consulting services offer expert guidance to organizations aiming to
+                        improve performance and achieve their goals. These services include strategic planning,
+                        operational efficiency analysis, financial advisory, and market research. Consultants help
+                        businesses identify challenges, develop actionable solutions, and implement best practices
+                        tailored to their unique needs.
+                        Additionally, services may cover change management, risk assessment, and leadership development
+                    </p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <span class="circle-before"></span>
+            </div>
+
+            <div class="single-service">
+                <div class="content">
+                    <span class="icon">
+                        <div class="icon-inner">
+                            <i class="fas fa-laptop-code"></i> <!-- Front icon -->
+                        </div>
+                    </span>
+                    <h3 class="title">Web Developer</h3>
+                    <p class="description">Web development services involve the creation and maintenance of websites and
+                        web applications to ensure optimal performance and user experience. These services include
+                        front-end development, which focuses on the visual aspects of a site, and back-end development,
+                        which handles server-side functionality and database management. Developers also provide
+                        responsive design
+                        to ensure compatibility across devices, e-commerce integration, and content management system
+                        (CMS) setup for easy updates.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <span class="circle-before"></span>
+            </div>
+        </div>
+    </section>
+
+
+    <style>
+        /* Base styles for the skill bar */
+        .bar {
+            position: relative;
+            /* Positioning context for absolute children */
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        /* Animate to make them visible */
+        .bar.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Puzzle effect animation */
+        @keyframes puzzleEffect {
+            0% {
+                transform: translate(0, 0);
+            }
+
+            25% {
+                transform: translate(-10px, -10px);
+            }
+
+            50% {
+                transform: translate(10px, -10px);
+            }
+
+            75% {
+                transform: translate(-10px, 10px);
+            }
+
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+
+        /* Hover effect to trigger puzzle effect */
+        .bar:hover {
+            animation: puzzleEffect 0.8s ease forwards;
+            /* Trigger the animation */
+        }
+
+        .info img {
+            transition: transform 0.3s ease;
+        }
+
+        /* Add rotation effect to the icon on hover */
+        .bar:hover img {
+            transform: rotate(360deg);
+            /* Rotate the image 360 degrees */
+            transition: transform 0.6s ease;
+            /* Transition for smooth rotation */
+        }
+    </style>
+
+    <style>
+        .single-service .icon {
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .single-service:hover .icon {
+            color: #f55d1b;
+            /* Change color on hover */
+            transform: scale(1.1);
+            /* Slightly scale up */
+            position: relative;
+        }
+
+        .single-service:hover .icon::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: rgba(245, 93, 27, 0.3);
+            transform: translate(-50%, -50%) scale(0);
+            animation: splash 0.5s forwards;
+        }
+
+        @keyframes splash {
+            to {
+                transform: translate(-50%, -50%) scale(1);
+            }
+        }
+
+        .single-service .icon {
+            transition: transform 0.3s ease;
+        }
+
+        .single-service:hover .icon {
+            transform: rotate(15deg) translateY(-10px);
+        }
+
+        .single-service .icon {
+            transition: transform 0.3s ease;
+        }
+
+        .single-service:hover .icon {
+            animation: bounce 0.5s ease forwards;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-15px) scale(1.2);
+            }
+        }
+
+        .single-service .icon {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .single-service .icon::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(90deg, #f55d1b, #f5b027, #f55d1b);
+            transform: translateX(-100%);
+            transition: transform 0.6s;
+        }
+
+        .single-service:hover .icon::after {
+            transform: translateX(0);
+            /* Move gradient on hover */
+        }
+    </style>
+
+    <!--<style>
+        .icons {
+            display: flex;
+            gap: 20px;
+        }
+
+        .icon {
+            font-size: 50px;
+            opacity: 0;
+            transform: scale(0.3);
+        }
+    </style>
+
+    <script>
+        const timeline = gsap.timeline({ repeat: -1, repeatDelay: 1 });
+
+        // Stagger animations on the icons
+        timeline.to(".icon", {
+            opacity: 1,
+            scale: 1,
+            duration: 0.6,
+            stagger: 0.3,
+            ease: "back.out(1.7)"
+        })
+            .to(".icon", {
+                rotation: 360,
+                duration: 1.5,
+                ease: "power2.inOut"
+            })
+            .to(".icon", {
+                scale: 0.5,
+                opacity: 0,
+                duration: 0.6,
+                stagger: 0.3,
+                ease: "back.in(1.7)"
+            });
+    </script>!-->
+
+
+    <script src="script.js"></script>
+
+    <!--<section class="project" id="project">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-md-10 col-lg-8">
+                    <div class="header-section">
+                        <h2 class="title"><span>Projects</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-card-1">
+                <div class="card mb-3">
+                    <img src="img/graphic-design-services-250x250.webp" class="card-img-top" alt=""
+                        style="width: 250px; height:250px">
+                    <h5 class="car-title text-light">
+                        <img src="img/gd.jpg" class="project-icon" alt="" style="width: 250px;height:250px">
+                        <br>Graphic design
+                    </h5>
+                    <a href="" class="btn btn-light">Go Somewhere</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4 col-card-2">
+                    <div class="card mb-3">
+                        <img src="img/web-design-header.jpg" class="card-img-top" alt=""
+                            style="width: 250px;height:250px">
+                        <h5 class="car-title text-light">
+                            <img src="img/wd.avif" class="project-icon" alt="" style="width: 250px;height:250px">
+                            <br>Web design
+                        </h5>
+                        <a href="" class="btn btn-light">Go Somewhere</a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-card-3">
+                    <div class="card mb-3">
+                        <img src="img/sd.jpg" class="card-img-top" alt="" style="width: 250px;height:250px">
+                        <h5 class="car-title text-light">
+                            <img src="img/sd icon.jpg" class="project-icon" alt="" style="width: 250px;height:250px">
+                            <br>Software development
+                        </h5>
+                        <a href="" class="btn btn-light">Go Somewhere</a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-card-4">
+                    <div class="card mb-3">
+                        <img src="img/ui.webp" class="card-img-top" alt="" style="width: 250px;height:250px">
+                        <h5 class="car-title text-light">
+                            <img src="img/ux.jpg" class="project-icon" alt="" style="width: 250px;height:250px">
+                            <br>UI/UX
+                        </h5>
+                        <a href="" class="btn btn-light">Go Somewhere</a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-card-5">
+                    <div class="card mb-3">
+                        <img src="img/brd.jpg" class="card-img-top" alt="" style="width: 250px;height:250px">
+                        <h5 class="car-title text-light">
+                            <img src="img/digital-branding.jpg" class="project-icon" alt=""
+                                style="width: 250px;height:250px">
+                            <br>Branding
+                        </h5>
+                        <a href="" class="btn btn-light">Go Somewhere</a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-card-6">
+                    <div class="card mb-3">
+                        <img src="img/research.jpg" class="card-img-top" alt="" style="width: 250px;height:250px">
+                        <h5 class="car-title text-light">
+                            <img src="img/research-methods-covid-webinar-header.jpg" class="project-icon" alt=""
+                                style="width: 250px;height:250px">
+                            <br>Research
+                        </h5>
+                        <a href="" class="btn btn-light">Go Somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>!-->
+    <section id="projects" class="Projects">
+        <div class="heading">
+            <h4>Projects</h4>
+        </div>
+        <div class="project-cards">
+            <div class="project-card fade-in" id="project1" style="background-image: url('img/gd.jpg');">
+                <div class="overlay">
+                    <h2>Graphic Design</h2>
+                    <p>This project aims to enhance the visual identity of a mid-sized company by developing a cohesive
+                        graphic design strategy. </p>
+                    <a href="gd.txt" class="learn-more">Learn More</a>
+                </div>
+            </div>
+            <div class="project-card fade-in" id="project2" style="background-image: url('img/sd icon.jpg');">
+                <div class="overlay">
+                    <h2>Software Development</h2>
+                    <p>This project aims to design and develop a custom inventory management system tailored to
+                        streamline operations for a mid-sized retail company.</p>
+                    <a href="sd.txt" class="learn-more">Learn More</a>
+                </div>
+            </div>
+            <div class="project-card fade-in" id="project3" style="background-image: url('img/wd.avif');">
+                <div class="overlay">
+                    <h2>Web Design</h2>
+                    <p>This project aims to redesign the corporate website of a mid-sized company to improve user
+                        experience, boost engagement, and better reflect the brand's identity.</p>
+                    <a href="wd.txt" class="learn-more">Learn More</a>
+                </div>
+            </div>
+            <div class="project-card fade-in" id="project4" style="background-image: url('img/ui.webp');">
+                <div class="overlay">
+                    <h2>UI/UX</h2>
+                    <p>This project aims to redesign the user interface (UI) and user experience (UX) of a mobile
+                        application to improve usability, engagement, and overall satisfaction. </p>
+                    <a href="ui.txt" class="learn-more">Learn More</a>
+                </div>
+            </div>
+            <div class="project-card fade-in" id="project5" style="background-image: url('img/brd.jpg');">
+                <div class="overlay">
+                    <h2>Branding</h2>
+                    <p>This project aims to create a cohesive brand strategy for tata Company, focusing on defining its
+                        identity, enhancing market presence, and fostering customer loyalty. </p>
+                    <a href="brd.txt" class="learn-more">Learn More</a>
+                </div>
+            </div>
+            <div class="project-card fade-in" id="project6" style="background-image: url('img/research.jpg');">
+                <div class="overlay">
+                    <h2>Research</h2>
+                    <p>This project aims to conduct a comprehensive market research study to inform the development of a
+                        new product for cosmetics Company.</p>
+                    <a href="research.txt" class="learn-more">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contact" id="contact">
+        <form action="https://api.web3forms.com/submit" method="POST" novalidate>
+            <input type="hidden" name="access_key" value="80faefde-5423-4321-b270-a2ec4bb4ea42">
+
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h2 class="sub-title">Contact Me</h2>
+                        <p><i class="fa-solid fa-paper-plane"></i> <a
+                                href="mailto:snsiva854@gmail.com">snsiva854@gmail.com</a></p>
+                        <p><i class="fa-solid fa-phone"></i><a href="tel:+919344702577">+919344702577</a></p>
+                        <div class="social-icon">
+                            <a
+                                href="https://www.linkedin.com/in/m-siva-36bb70290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                                    class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://github.com/Siva018-bit"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://x.com/Shiva_vk_17?t=6DU3pnQqshlbE0pFhlf8vg&s=08"><i
+                                    class="fa-brands fa-x-twitter"></i></a>
+                            <a href="https://www.instagram.com/_.shiva_.vk_/"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-right">
+                        <form action="send_mail.php" method="POST">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="Message" id="" rows="4" placeholder="Your Message"></textarea>
+                            <button class="button">
+                                <p>Submit</p>
+                            </button>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <footer class="footer">
+        <div class="social">
+            <a
+                href="https://www.linkedin.com/in/m-siva-36bb70290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                    class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/Siva018-bit"><i class="fa-brands fa-github"></i></a>
+            <a href="https://x.com/Shiva_vk_17?t=6DU3pnQqshlbE0pFhlf8vg&s=08"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.instagram.com/_.shiva_.vk_/"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <ul class="list">
+            <li><a href="#">FAQ's</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+        <p class="copyright">
+            <i class="fa-solid fa-copyright"></i> Siva | All Right Reserved
+        </p>
+    </footer>
+
+
+</body>
+
+</html>

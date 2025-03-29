@@ -1,0 +1,41 @@
+Project Title: Task Management Web Application
+Project Overview:
+I developed a full-stack task management web application that allows users to create, manage, and prioritize tasks. The app includes features such as user authentication, task categorization, deadlines, and progress tracking. The goal was to create a simple, intuitive tool that helps users stay organized and productive.
+
+Technologies Used:
+Front-End: HTML, CSS, JavaScript, React.js
+Back-End: Node.js, Express.js
+Database: MongoDB
+Authentication: JWT (JSON Web Token)
+Version Control: Git & GitHub
+Deployment: Heroku (for the backend) and Netlify (for the frontend)
+Features:
+User Authentication: Secure user registration, login, and session management using JWT.
+Task Creation & Management: Users can add, edit, delete, and categorize tasks by priority, deadline, and status (e.g., In Progress, Completed).
+Responsive Design: Ensured the application works seamlessly across desktop and mobile devices.
+Progress Tracker: Visual representation of completed tasks versus total tasks, with real-time updates.
+Notifications: Email reminders for upcoming task deadlines.
+Development Process:
+1. Planning & Requirement Gathering:
+Collaborated with the client to understand their needs for task management and productivity.
+Defined the core features and created user stories to map out the application's functionality.
+2. Design & Prototyping:
+Created wireframes and UI prototypes using Figma to visualize the layout and flow of the application.
+Designed a clean, minimal UI focused on user experience, with easy navigation and simple forms.
+3. Front-End Development:
+Implemented the UI using React.js, making use of functional components and React Hooks for state management.
+Built a responsive, mobile-first design with CSS Grid and Flexbox.
+Integrated React Router for seamless navigation between pages (dashboard, task details, etc.).
+4. Back-End Development:
+Developed the RESTful API using Node.js and Express.js.
+Designed the MongoDB schema for users and tasks, ensuring efficient data storage and retrieval.
+Implemented JWT-based authentication, ensuring secure API endpoints for task creation, updates, and deletion.
+Integrated Nodemailer to send automated email notifications for task reminders.
+5. Testing & Debugging:
+Wrote unit tests for both the front-end (React components) and back-end (API endpoints) using Jest and Supertest.
+Performed manual testing across multiple devices and browsers to ensure cross-browser compatibility.
+6. Deployment & Monitoring:
+Deployed the front-end on Netlify and the back-end on Heroku.
+Set up logging and error monitoring using Loggly to capture any issues in production.
+Final Outcome:
+The task management app has been successfully deployed and is currently being used by over 100 users. The client reported an increase in productivity and organization among their team members. The project demonstrated my ability to develop full-stack applications with a focus on user-friendly design and performance.
